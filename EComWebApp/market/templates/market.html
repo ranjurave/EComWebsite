@@ -5,7 +5,12 @@
 {% endblock %}
 
 {% block content %}
-<table class="table table-hover table-dark">
+<div class="row" style = 'margin-top:20px; margine-left:20px'>
+  <div class="col-8">
+    <h2>Available Items on the Market</h2>
+    <p> Click on of the item to start buying</p>
+    <br>
+  <table class="table table-hover table-dark">
   <thead>
     <tr>
       <!-- Your Columns HERE -->
@@ -32,4 +37,12 @@
       {% endfor %}
   </tbody>
 </table>
+  </div>
+  <div class="col-4">
+    <h2>Owened items</h2>
+    <p> Click on an item to put in market</p>
+    <br>
+  </div>
+</div>
+
 {% endblock %}
