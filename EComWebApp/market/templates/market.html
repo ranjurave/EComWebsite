@@ -5,6 +5,7 @@
 {% endblock %}
 
 {% block content %}
+{% include 'includes/item_modals.html' %}
 <div class="row" style = 'margin-top:20px; margine-left:20px'>
   <div class="col-8">
     <h2>Available Items on the Market</h2>
@@ -30,7 +31,7 @@
         <td>{{ item.barcode }}</td>
         <td>${{ item.price }}</td>
         <td>
-          <button class="btn btn-outline btn-info">More Info</button>
+          <button class="btn btn-outline btn-info" data-toggle="modal" data-target="#Modal-MoreInfo">More Info</button>
           <button class="btn btn-outline btn-success">Purchase This Item</button>
         </td>
       </tr>
